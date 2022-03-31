@@ -86,14 +86,7 @@ while running:
     if 0 < cnt < 3:
         screen.blit(previous_button,(360,450))
         screen.blit(next_button,(760,450))
-    #change name of the songs
-    # pressed = pygame.key.get_pressed()
-    # if pressed[pygame.MOUSEBUTTONDOWN] and event.button == 1 and 560 < x < 760  and 450 < y < 650:
-    #     screen.blit(text,(500,0))
-    # if pressed[pygame.MOUSEBUTTONDOWN]:
-    #     screen.blit(text,(500,0))
-    # if pressed[pygame.MOUSEBUTTONDOWN]:
-    #     screen.blit(text,(500,0))         
+         
     pygame.display.update()       
     #fps
     clock.tick(60)      
