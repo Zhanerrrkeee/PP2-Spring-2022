@@ -27,7 +27,6 @@ mainmenu = True
 #program
 while running:
     #name of the songs
-    # text = font.render(song[cnt],True,(255,255,255))
     x,y = pygame.mouse.get_pos()
     for event in pygame.event.get():
         #quit the program
@@ -43,19 +42,7 @@ while running:
             screen.blit(font.render(song[cnt],True,(255,255,255)),(500,0))    
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1 and rem == False and 560 < x < 760  and 450 < y < 650:
                 pygame.mixer.music.stop()
-                rem = True
-        # elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1 and cnt <= 0 and 360 < x < 560 and 450< y < 650:
-            # rem = False
-            # cnt = 0
-            # pygame.mixer.music.load(mus[cnt])
-            # screen.blit(pygame.image.load(background[cnt]).convert(),(0,0))
-            # pygame.mixer.music.play(0)
-        # elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1  and cnt >= 3 and 360 < x < 560 and 450< y < 650:
-            # rem = False
-            # cnt = 3
-            # pygame.mixer.music.load(mus[cnt])
-            # screen.blit(pygame.image.load(background[cnt]).convert(),(0,0))
-            # pygame.mixer.music.play(0)    
+                rem = True   
         elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1 and 760 <x< 960 and 450<y<650 :
             cnt += 1
             pygame.mixer.music.load(mus[cnt])
@@ -86,7 +73,7 @@ while running:
     if 0 < cnt < 3:
         screen.blit(previous_button,(360,450))
         screen.blit(next_button,(760,450))
-         
+                 
     pygame.display.update()       
     #fps
     clock.tick(60)      
