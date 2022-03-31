@@ -1,28 +1,28 @@
 import pygame
 import os
 from datetime import date, datetime
-
+#init
 pygame.init()
-
+#screen
 size = (WIDTH, HEIGHT) = (1440, 1050)
 screen = pygame.display.set_mode(size)
 running = True
 clock = pygame.time.Clock()
 white = (255,255,255)
-
+#resize and load
 bg = pygame.transform.scale(pygame.image.load(os.path.join('images','mikki.png')),(WIDTH, HEIGHT))
-
+#second arrow and angle and pos 
 sec_img = pygame.image.load(os.path.join('images','m1.png'))
 x_sec, y_sec = WIDTH/2 + 7, HEIGHT/2 - 5
-
+#min arrow and angle and pos
 min_img = pygame.image.load(os.path.join('images','m2.png'))
 x_min, y_min = WIDTH/2, HEIGHT/2
-
+#rotate center 
 def rot_center(image, angle, x, y):
     rotated_image = pygame.transform.rotate(image, angle)
     new_rect = rotated_image.get_rect(center = image.get_rect(center = (x, y)).center)
     return rotated_image, new_rect
-
+#program
 while running:
 
    clock.tick(60)
