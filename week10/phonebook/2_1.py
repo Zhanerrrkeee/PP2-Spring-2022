@@ -21,7 +21,7 @@ with open('Phonebook.csv','w',newline='') as f:
 def from_csv_to_table():
    sql = """
       COPY phonebook(contact, tel_number, tel_connection, email, relationship)
-      FROM \'C:\Programming Principles II\PP2_LAB\Week_10\Lab10\PhoneBook\Phonebook.csv\'
+      FROM \'C:\study\pp2\week10\phonebook'
       DELIMITER \',\'
       CSV HEADER;
    """
