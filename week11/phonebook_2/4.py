@@ -4,7 +4,7 @@ conn = psycopg2.connect(
   host="localhost",
   database="postgres",
   user="postgres",
-  password="JASIK_2004"
+  password="Dimash2003"
 )
 
 sql = """
