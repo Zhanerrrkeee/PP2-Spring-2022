@@ -4,7 +4,7 @@ conn = psycopg2.connect(
   host="localhost",
   database="postgres",
   user="postgres",
-  password="JASIK_2004"
+  password="Dimash2003"
 )
 
 query = input('Enter the contact or phone number that you want to delete?\n')
